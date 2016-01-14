@@ -1,0 +1,34 @@
+
+
+{
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "source": {
+        "include" : ["src/"],
+        "includePattern": ".+\\.js(doc)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": [],
+    "templates": {
+        "systemName"            : "Souq Assets Docs",
+        "footer"                : "",
+        "copyright"             :  "Documented by Qusai Tabbal",
+        "includeDate"           : true,
+        "navType"               : "<vertical></vertical>",
+        "theme"                 : "cerulean",
+        "linenums"              : true,
+        "collapseSymbols"       : true,
+        "inverseNav"            : true,
+        "outputSourceFiles"     : true ,
+        "outputSourcePath"      : true,
+        "sort"                  : true
+    },
+    "opts": {
+        "template": "./node_modules/ink-docstrap/template",  
+        "encoding": "utf8",               
+        "destination": "./docs/",         
+        "recurse": true
+    }
+}
